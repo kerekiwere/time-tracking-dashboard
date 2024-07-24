@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+  <main class="dashboard container">
+    <h1 class="sr-only">Time tracking dashboard</h1>
+    <section class="cards" id="cards-section">
+      <article class="card card__profile">
+        <div class="card__profile-top">
+          <img src="images/image-jeremy.png" alt="Image of Jeremy" width="70" height="70" class="card__profile-image">
+          <h2 class="card__profile-title">Report for <span>Jeremy Robson</span></h2>
+        </div>
+        <div class="card__profile-bottom">
+          <ul class="card__profile-timeframes">
+            <li><button type="button" aria-label="View daily data" data-timeframe="daily" id="button-daily">Daily</button></li>
+            <li><button type="button" aria-label="View weekly data" data-timeframe="weekly" id="button-weekly" class="active">Weekly</button></li>
+            <li><button type="button" aria-label="View monthly data" data-timeframe="monthly" id="button-monthly">Monthly</button></li>
+          </ul>
+        </div>
+      </article>
+      <!-- Activity cards generated with JavaScript -->
+    </section>
+  </main>
+</body>
+
+</html>
